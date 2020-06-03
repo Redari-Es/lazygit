@@ -95,7 +95,7 @@ Default path for the config file:
       prevScreenMode: '_'
       undo: 'z'
       redo: '<c-z>'
-      filteringMenu: <c-s>
+      filteringMenu: '<c-s>'
       diffingMenu: '<c-e>'
       copyToClipboard: '<c-o>'
     status:
@@ -245,29 +245,33 @@ For all possible keybinding options, check [Custom_Keybindings.md](https://githu
 ### Example Keybindings For Colemak Users
 
 ```yaml
-  keybinding:
-    universal:
-      prevItem-alt: 'u'
-      nextItem-alt: 'e'
-      prevBlock-alt: 'n'
-      nextBlock-alt: 'i'
-      nextMatch: '='
-      prevMatch: '-'
-      new: 'k'
-      edit: 'o'
-      openFile: 'O'
-      scrollUpMain-alt1: 'U'
-      scrollDownMain-alt1: 'E'
-      scrollUpMain-alt2: '<c-u>'
-      scrollDownMain-alt2: '<c-e>'
-    files:
-      ignoreFile: 'I'
-    commits:
-      moveDownCommit: '<c-e>'
-      moveUpCommit: '<c-u>'
-      toggleDiffCommit: 'l'
-    branches:
-      viewGitFlowOptions: 'I'
+keybinding:
+  universal:
+    prevItem-alt: 'u'
+    nextItem-alt: 'e'
+    prevBlock-alt: 'n'
+    nextBlock-alt: 'i'
+    nextMatch: '='
+    prevMatch: '-'
+    new: 'k'
+    edit: 'o'
+    openFile: 'O'
+    scrollUpMain-alt1: 'U'
+    scrollDownMain-alt1: 'E'
+    scrollUpMain-alt2: '<c-u>'
+    scrollDownMain-alt2: '<c-e>'
+    undo: 'l'
+    redo: '<c-r>'
+    diffingMenu: 'M'
+    filteringMenu: '<c-f>'
+  files:
+    ignoreFile: 'I'
+  commits:
+    moveDownCommit: '<c-e>'
+    moveUpCommit: '<c-u>'
+  branches:
+    viewGitFlowOptions: 'I'
+    setUpstream: 'U'
 ```
 
 ## Custom pull request URLs
